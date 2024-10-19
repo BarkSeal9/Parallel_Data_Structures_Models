@@ -77,19 +77,19 @@ Models parameters are:
 * **pq21** -- probability of insertion in the second deque and parallel deletion from the first one;
 * **r** -- probability of absence of an operation.
 
-Models parameters for *\*_x3_Part_\** are:
+Models parameters for *\*_x3_Part\_** are:
 
 * **m** -- size of available memory;
-* *Sk_n* -- the working end of deque De_n (a stack);
-* *Qe_n* -- the work stealing end of deque De_n (a queue);
-* *s* -- the part of memory that contains combined work stealing queue Qe (Qe_1+Qe_2+Qe_3) and working end Sk_1;
-* *m-s* -- the part of memory that contains working ends Sk_2 and Sk_3;
-* *p_n* -- probability of insertion in Sk_n;
-* *q_n* -- probability of deletion from Sk_n;
-* *w_n* -- probability of stealing from Qe;
-* *pw_n* -- probability of parallel insertion in Sk_n and stealing from Qe;
-* *qw_n* -- probability of parallel deletion from Sk_n and stealing from Qe;
-* *r_n* -- probability of absence of an operation.
+* **Sk_n** -- the working end of deque De_n (a stack);
+* **Qe_n** -- the work stealing end of deque De_n (a queue);
+* **s** -- the part of memory that contains combined work stealing queue Qe (Qe_1+Qe_2+Qe_3) and working end Sk_1;
+* **m-s** -- the part of memory that contains working ends Sk_2 and Sk_3;
+* **p_n** -- probability of insertion in Sk_n;
+* **q_n** -- probability of deletion from Sk_n;
+* **w_n** -- probability of stealing from Qe;
+* **pw_n** -- probability of parallel insertion in Sk_n and stealing from Qe;
+* **qw_n** -- probability of parallel deletion from Sk_n and stealing from Qe;
+* **r_n** -- probability of absence of an operation.
 
 Utilizing these models, one can solve the problem of finding the optimal partition or redistribution of memory between two deques [Sokolov A.V., Barkovsky E.A. The Mathematical Model and the Problem of Optimal Partitioning of Shared Memory for Work-Stealing Deques // Proceedings of PaCT 2015, 2015, V. 9251, P. 102-106]. The optimality criterion is the maximum mean time before memory overflow or reallocation.
 
